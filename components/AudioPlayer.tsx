@@ -12,7 +12,6 @@ export default function AudioPlayer({ audioStream }: AudioPlayerProps) {
   useEffect(() => {
     if (!audioRef.current) return;
 
-    // 直接设置音频源
     audioRef.current.srcObject = audioStream;
     audioRef.current.autoplay = true;
 
